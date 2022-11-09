@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen," }>
 
 <head>
   <meta charset="UTF-8" />
@@ -23,6 +23,11 @@
       position: relative;
       z-index: 10;
     }
+
+    .noscroll,
+    .noscroll body {
+      overflow: hidden;
+    }
   </style>
 </head>
 
@@ -41,6 +46,18 @@
         <li><a href="#">item 3</a></li>
       </ul>
     </nav>
+    <dl>
+      <dt>Lorem.</dt>
+      <dd>Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl>
+      <dt>Minima?</dt>
+      <dd>Officiis ipsa neque deleniti. Nostrum!</dd>
+    </dl>
+    <dl>
+      <dt>Et?</dt>
+      <dd>Adipisci dolore pariatur dolor velit.</dd>
+    </dl>
   </header>
   <!-- h2>lorem2^p>lorem -->
   <h2>Lorem, ipsum.</h2>
