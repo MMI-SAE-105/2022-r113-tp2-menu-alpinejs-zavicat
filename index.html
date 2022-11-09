@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false; DD: false}" :class="{noscroll:menuIsOpen," }>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen," }>
 
 <head>
   <meta charset="UTF-8" />
@@ -46,17 +46,23 @@
         <li><a href="#">item 3</a></li>
       </ul>
     </nav>
-    <dl>
-      <dt>Lorem.</dt>
-      <dd x-show="DD">Lorem ipsum dolor sit amet.</dd>
+    <dl x-data="{dd: false}">
+      <button>
+        <dt @click="dd=! dd">Lorem.</dt>
+      </button>
+      <dd x-show="dd">Lorem ipsum dolor sit amet.</dd>
     </dl>
-    <dl>
-      <dt>Minima?</dt>
-      <dd>Officiis ipsa neque deleniti. Nostrum!</dd>
+    <dl x-data="{dd2: false}">
+      <button>
+        <dt @click="dd2=! dd2">Minima?</dt>
+      </button>
+      <dd x-show="dd2">Officiis ipsa neque deleniti. Nostrum!</dd>
     </dl>
-    <dl>
-      <dt>Et?</dt>
-      <dd>Adipisci dolore pariatur dolor velit.</dd>
+    <dl x-data="{dd3: false}">
+      <button>
+        <dt @click="dd3=! dd3">Et?</dt>
+      </button>
+      <dd x-show="dd3">Adipisci dolore pariatur dolor velit.</dd>
     </dl>
   </header>
   <!-- h2>lorem2^p>lorem -->
