@@ -1,3 +1,3 @@
-- nom :
-- prénom :
-- URL publique du site :
+- nom : Vicat
+- prénom : Zoe-Augustine
+- URL publique du site : https://github.com/MMI-SAE-105/2022-r113-tp2-menu-alpinejs-zavicat
