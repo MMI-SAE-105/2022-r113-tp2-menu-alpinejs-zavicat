@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen," }>
+<html lang="fr" x-data="{menuIsOpen: false; DD: false}" :class="{noscroll:menuIsOpen," }>
 
 <head>
   <meta charset="UTF-8" />
@@ -48,7 +48,7 @@
     </nav>
     <dl>
       <dt>Lorem.</dt>
-      <dd>Lorem ipsum dolor sit amet.</dd>
+      <dd x-show="DD">Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl>
       <dt>Minima?</dt>
