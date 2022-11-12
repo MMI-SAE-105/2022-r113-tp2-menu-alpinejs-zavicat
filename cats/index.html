@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats</title>
+    <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .menu {
@@ -36,14 +36,22 @@
     <!-- header>h1{Test de menu} -->
     <header>
         <button aria-controls="maisNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            Menu
+            <img src="public/icones/menu.svg">
         </button>
         <h1>Test de menu</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <li><a href="#">item 1</a></li>
-                <li><a href="#">item 2</a></li>
-                <li><a href="#">item 3</a></li>
+                <h2><a href=../index.html>Accueil</a></h2>
+                <li>Les chats</li>
+                <ul>
+                    <li><a href="../cats/chat-1.html">Chat 1</a></li>
+                    <li><a href="../cats/chat-2.html">Chat 2</a></li>
+                </ul>
+                <li><a href="#">Chiens</a></li>
+                <ul>
+                    <li><a href="../dogs/chien-1.html">Chien 1</a></li>
+                    <li><a href="../dogs/chien-2.html">Chien 2</a></li>
+                </ul>
             </ul>
         </nav>
         <dl x-data="{dd: false}">
