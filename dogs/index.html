@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chiens</title>
+    <link rel='stylesheet' href='../src/css/styles.css'>
+    <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .menu {
@@ -28,12 +29,6 @@
         .noscroll body {
             overflow: hidden;
         }
-
-        .h1 {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
     </style>
 </head>
 
@@ -42,14 +37,22 @@
     <!-- header>h1{Test de menu} -->
     <header>
         <button aria-controls="maisNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            Menu
+            <img src="../public/icones/menu.svg">
         </button>
         <h1>Test de menu</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <li><a href="#">item 1</a></li>
-                <li><a href="#">item 2</a></li>
-                <li><a href="#">item 3</a></li>
+                <h2><a href=../index.html>Accueil</h2></a>
+                <li><a href=../cats/index.html>Les chats</li></a>
+                <ul>
+                    <li><a href="../cats/chat-1.html">Chat 1</li></a>
+                    <li><a href="../cats/chat-2.html">Chat 2</li></a>
+                </ul>
+                <li>Chiens</li>
+                <ul>
+                    <li><a href="dogs/chien-1.html">Chien 1</li></a>
+                    <li><a href="dogs/chien-2.html">Chien 2</li></a>
+                </ul>
             </ul>
         </nav>
         <dl x-data="{dd: false}">
