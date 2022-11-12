@@ -57,24 +57,25 @@
         </ul>
       </ul>
     </nav>
-    <dl x-data="{dd: false}">
-      <button>
-        <dt @click="dd=! dd">Lorem.</dt>
-      </button>
-      <dd x-show="dd">Lorem ipsum dolor sit amet.</dd>
-    </dl>
-    <dl x-data="{dd2: false}">
-      <button>
-        <dt @click="dd2=! dd2">Minima?</dt>
-      </button>
-      <dd x-show="dd2">Officiis ipsa neque deleniti. Nostrum!</dd>
-    </dl>
-    <dl x-data="{dd3: false}">
-      <button>
-        <dt @click="dd3=! dd3">Et?</dt>
-      </button>
-      <dd x-show="dd3">Adipisci dolore pariatur dolor velit.</dd>
-    </dl>
+    <section class="body">
+      <dl x-data="{dd: false}">
+        <button>
+          <dt @click="dd=! dd">Lorem.</dt>
+        </button>
+        <dd x-show="dd">Lorem ipsum dolor sit amet.</dd>
+      </dl>
+      <dl x-data="{dd2: false}">
+        <button>
+          <dt @click="dd2=! dd2">Minima?</dt>
+        </button>
+        <dd x-show="dd2">Officiis ipsa neque deleniti. Nostrum!</dd>
+      </dl>
+      <dl x-data="{dd3: false}">
+        <button>
+          <dt @click="dd3=! dd3">Et?</dt>
+        </button>
+        <dd x-show="dd3">Adipisci dolore pariatur dolor velit.</dd>
+      </dl>
   </header>
   <!-- h2>lorem2^p>lorem -->
   <h2>Lorem, ipsum.</h2>
@@ -84,6 +85,7 @@
     nemo aliquid pariatur quam voluptates animi laudantium, aperiam
     consectetur nobis enim.
   </p>
+  </section>
 </body>
 
 </html>

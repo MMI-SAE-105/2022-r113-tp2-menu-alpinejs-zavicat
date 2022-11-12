@@ -9,10 +9,10 @@ h2 {
     text-decoration: none;
 }
 
-button {
-    padding: 0;
-    background: none;
+.header__menuBtn {
     text-decoration: none;
+    padding: 8px;
+    ;
 }
 
 p {
@@ -22,18 +22,22 @@ p {
 dt {
     font-family: 'Poppins', sans-serif;
     font-size: medium;
-    font-weight: bold;
-    padding: 2px;
+    padding: 3px;
     margin: 2px;
+    font-weight: bold;
 }
 
 dd {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 5px;
+    margin: 10px;
 }
 
-.header__menuBtn {
+button {
+    background: none;
     text-decoration: none;
-    padding: 8px;
-    ;
+}
+
+.body {
+    padding: 10px
 }
