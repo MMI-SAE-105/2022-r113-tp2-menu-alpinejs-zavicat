@@ -1,15 +1,39 @@
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
 h2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
-li {
-    font-family: 'Poppins', sans-serif;
-}
-
 button {
     padding: 0;
-    border: 0;
     background: none;
+    text-decoration: none;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+dt {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    padding: 2px;
+    margin: 2px;
+}
+
+dd {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+.header__menuBtn {
+    text-decoration: none;
+    padding: 8px;
+    ;
 }
